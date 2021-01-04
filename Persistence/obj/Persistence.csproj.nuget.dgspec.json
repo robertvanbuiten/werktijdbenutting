@@ -13,6 +13,9 @@
         "packagesPath": "/Users/robertvanbuiten/.nuget/packages/",
         "outputPath": "/Users/robertvanbuiten/dev/werktijdbenutting/Domain/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/Users/robertvanbuiten/.nuget/NuGet/NuGet.Config"
         ],
@@ -65,6 +68,9 @@
         "packagesPath": "/Users/robertvanbuiten/.nuget/packages/",
         "outputPath": "/Users/robertvanbuiten/dev/werktijdbenutting/Persistence/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/Users/robertvanbuiten/.nuget/NuGet/NuGet.Config"
         ],
@@ -93,6 +99,28 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
